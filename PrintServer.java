@@ -3,7 +3,7 @@ import content.Packet;
 
 public class PrintServer extends LANNode {
 	public void print(Packet p) {
-		String packetInfo = getPacketInfo(p);
+		String packetInfo = p.getPacketInfo();
 		System.out.println(packetInfo);
 	}
 	public String getPacketInfo (Packet p) {

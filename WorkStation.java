@@ -2,7 +2,7 @@ package nodes;
 import content.Packet;
 
 public class WorkStation extends LANNode {
-	public void originate (Packet p) {
+	public void generatePacket (Packet p) {
 		p.originator = this;
 		this.send(p);
 	}
